@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Image Test</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+</head>
+
+<body>
+	<h2>Responsive Image</h2>
+	<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+	<img src = "iu.jpg" alt = "iu" style = "width:100%">
+
+	<br>
+
+	<h2>Responsive Image</h2>
+	<p>"max-width:100%" pervents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+	<p>Resize the browser window to see the effect.</p>
+
+	<img src = "iu.jpg" alt = "iu" style = "max-width:100%; height: auto;">
+
+	<br>
+
+	<h2>Show Different Image Depending on Browser Width</h2>
+	<p>Resize the browser width and image will change at 600px annd 1500px.</p>
+
+	<picture>
+		<source srcset = "iu.jpg" media = "(max-width:600px)">
+		<source srcset = "iu.jpg" media = "(max-width:1500px)">
+		<source srcset = "iu.jpg">
+		<img src = "iu.jpg" alt = "iu" style = "width:auto;">
+	</picture>
+
+	<h1 style = "font-size:10vw;">Responsive Text</h1>
+
+	<p style = "font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+	<p style = "font-size:5vw">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+	<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm, 1vw is 0.5cm.</p>
+</body>
+</html>

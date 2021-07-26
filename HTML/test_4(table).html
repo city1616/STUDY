@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Table</title>
+	<style>
+	body{
+		background-image: url('iu.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	table {
+		width: 100%;
+	}
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 15px;
+	}
+	th {
+		text-align: left;
+	}
+	table#t01 {
+		width: 100%;
+		background-color: #f1f1c1;
+	}
+	table#t02 tr:nth-child(even) {
+		background-color: #eee;
+	}
+	table#t02 tr:nth-child(odd) {
+		background-color: #fff;
+	}
+	table#t02 th {
+		background-color: black;
+		color: white;
+	}
+	</style>
+</head>
+
+<body>
+	<h2>Basic HTML Table</h2>
+
+	<h2>Bordered Table</h2>
+	<p>Use the CSS border perperty to add a border to the table.</p>
+
+	<table id = "t01">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+	<h2>Collapsed Borders</h2>
+	<p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
+
+	<h2>Cellpadding</h2>
+	<p>Cell padding specifies the space between the cell content and its borders.<br>Try to change the padding to 5px.</p>
+
+
+	<table id = "t02">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<table style = "width:100%;">
+		<tr>
+			<th>Name</th>
+			<th colspan = "2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>55577854</td>
+			<td>55577855</td>
+		</tr>
+	</table>
+
+	<br>
+	<h2>Cell that spans two rows</h2>
+	<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+	<table style = "width:100%;">
+		<tr>	<!--1-->
+			<th>Name:</th>
+			<td>Bill Gates</td>
+		</tr>
+		<tr>	<!-->2-->
+			<th rowspan = "2">Telephone</th>
+			<td>55577854</td>
+		</tr>
+		<tr>	<!--3-->
+			<td>5557855</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<table style = "width:100%;">
+		<caption>Monthly Savings</caption>
+		<tr>
+			<th>Month</th>
+			<th>Savings</th>
+		</tr>
+		<tr>
+			<td>January</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>February</td>
+			<td>$50</td>
+		</tr>
+	</table>
+
+</body>
+</html>

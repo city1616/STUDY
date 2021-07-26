@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Test</title>
+</head>
+
+<body>
+	<h1>My First JavaScript</h1>
+	<button type = "button" onclick = "document.getElementById('demo').innerHTML = Date()">
+		Click me to display Date and Time.</button>
+	<p id = "demo"></p>
+
+	<br>
+
+	<h2>Use JavaScript to Change Text</h2>
+	<p>This example writes "Hello JavaScript!" into an HTML element with id = "deemo": </p>
+
+	<p id = "ddemo"></p>
+
+	
+
+	<h1>My First JavaScript</h1>
+	<p>JavaScript can change the content of an HTML element:</p>
+	<button type = "button" onclick = "myFunction()">Click me!</button>
+	<p id = "demo1">This is a demonstration.</p>
+
+	<h1>My First JavaScript</h1>
+	<p id = "demo2">JavaScript can change the style of an HTML element.</p>
+
+	<button type = "button" onclick = "myFunction1()">Click Me!</button>
+
+	<p id = "demo3"></p>
+
+
+	<script>
+	document.getElementById("ddemo").innerHTML = "Hello JavaScript!";
+	function myFunction() {
+		document.getElementById("demo1").innerHTML = "Hello JavaScript!!!!!!";
+	}
+	function myFunction1() {
+		document.getElementById("demo2").style.fontSize = "25px";
+		document.getElementById("demo2").style.color = "red";
+		document.getElementById("demo2").style.backgroundColor = "yellow";
+	}
+	document.getElementById("demo3").innerHTML = "Hello JavaScript";
+	</script>
+
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class GroupWord {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int N = scan.nextInt();
+		String word[] = new String[N];
+		
+		for(int i = 0; i < N; i++) {
+			word[i] = scan.next();
+		}
+		
+		for(int j = 0; j < N; j++) {
+			System.out.println(word[j]);
+		}
+		
+	}
+
+}

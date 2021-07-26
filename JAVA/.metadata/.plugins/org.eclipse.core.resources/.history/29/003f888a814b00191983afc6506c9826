@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Number_Sort {
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int test_case = scan.nextInt();
+		int[] arr = new int[test_case];
+		int tmp = 0;
+		
+		for(int j = 0; j < test_case; j++) {
+			arr[j] = scan.nextInt();
+		}
+		
+		for(int i = 0; i < test_case; i++) {
+			if(arr[i] > arr[i + 1]) {
+				tmp = arr[i];
+				arr[i] = arr[i + 1];
+				arr[i + 1] = tmp;
+			}
+		}
+		for(int a = 0; a < test_case; a++) {
+			System.out.println(arr[a]);
+		}
+	}
+
+}

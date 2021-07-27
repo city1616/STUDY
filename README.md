@@ -8,4 +8,3 @@
 * music_score - 악보 오선 인식 코드
 
 + 위의 설명 외의 코드 - 관심 분야 찾아 틈틈히 공부한 흔적임(...ing)
-+ Exception CODE Above - Footprinting of Studying from time to time in find branch of my interest.

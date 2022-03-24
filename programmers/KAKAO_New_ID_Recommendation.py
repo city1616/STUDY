@@ -26,7 +26,7 @@ def solution(new_id) :
 
     word = [chr(i) for i in range(97, 123)]
     for i in range(10) :
-        word.append(i)
+        word.append(str(i))
         if i == 9 :
             word.append("-")
             word.append("_")
@@ -42,12 +42,24 @@ def solution(new_id) :
     new_id = temp
     print("2단계 new_id :", new_id)
 
-    new_id = new_id.replace("..", ".")
+    while new_id != new_id.replace("..", "."):
+        new_id = new_id.replace("..", ".")
     print("3단계 new_id :", new_id)
 
-    if new_id[0] == "." :
-        new_id = new_id[1:]
-    if new_id[len(new_id) - 1] == "." :
+    # if new_id[0] == "." :
+    #     new_id = new_id[1:]
+    # if new_id[len(new_id) - 1] == "." :
+    #     new_id = new_id[:-1]
+    # new_id.strip(".")
+    while new_id[0] == "." :
+        if len(new_id) == 1 :
+            new_id = "aaa"
+            print(new_id)
+            return new_id
+        else :
+            new_id = new_id[1:]
+
+    while new_id[len(new_id) - 1] == "." :
         new_id = new_id[:-1]
     print("4단계 new_id :", new_id)
 
@@ -65,12 +77,15 @@ def solution(new_id) :
         new_id = new_id[:-1]
     print("6단계 new_id :", new_id)
 
-    if len(new_id) == 2 :
-        new_id += new_id[0]
-    elif len(new_id) == 1 :
-        new_id *= 3
-    else :
-        print("문자열의 길이가 3 이상")
+    # if len(new_id) == 2 :
+    #     new_id += new_id[0]
+    # elif len(new_id) == 1 :
+    #     new_id *= 3
+    # else :
+    #     print("문자열의 길이가 3 이상")
+    
+    while len(new_id) < 3 :
+        new_id += new_id[len(new_id) - 1]
 
     print("7단계 new_id :", new_id)
     return answer
@@ -93,3 +108,8 @@ def solution(new_id) :
 # print(len(test))
 # print(len(test[:2]))
 solution("...!@BaT#*..y.abcdefghijklm")
+solution("z-+.^.")
+solution("=.=")
+solution("123_.def")
+solution("abcdefghijklmn.p")
+solution("=........a...a...")

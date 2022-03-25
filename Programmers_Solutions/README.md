@@ -5,7 +5,7 @@
 
 | No | 난이도 | 제목        | 분류                          | 코드 |
 |-|-|-|-|-|
-|1|Level 1|[1차] 다트 게임[![문제](/assets/link.svg)](https://programmers.co.kr/)     |2018 KAKAO BLIND RECRUITMENT  |Python|
+|1|Level 1|[1차] 다트 게임[![문제](/assets/foreign.png)](https://programmers.co.kr/)     |2018 KAKAO BLIND RECRUITMENT  |Python|
 |2|Level 1|신규 아이디 추천     |2021 KAKAO BLIND RECURITMENT  |Python|
 |3|Level 1|신고 결과 받기       |2022 KAKAO BLIND RECRUITMENT  |Python|
 |4|Level 1|없는 숫자 더하기     |월간 코드 챌린지 시즌3             | Python|

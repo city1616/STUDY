@@ -20,6 +20,16 @@ git config core.quotepath false
 git config --global core.quotepath false
 '''
 
+## 예외 파일 및 폴더 지정
+* 프로젝트 폴더에 .gitignore 파일을 생성한다.
+* 폴더명 끝에 /를 붙이면 하위 디렉토리를 무시한다.
+    * folder/
+* 특정 파일 이름을 등록하면 해당 파일으르 무시한다.
+    * test.txt
+* 특정 확장자 파일을 무시한다.
+    * *.log
+    * *.jpg
+
 ## 참고
 
 * 팀 개발을 위한 Git, GitHub 시작하기 

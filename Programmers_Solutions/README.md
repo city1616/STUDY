@@ -1,7 +1,6 @@
 # Programmers Solutions
 
 ## 문제 목록
----
 
 | No | 난이도 | 제목        | 분류                          | 코드 |
 |-|-|-|-|-|

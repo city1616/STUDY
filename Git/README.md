@@ -31,6 +31,10 @@ git config --global core.quotepath false
     * *.log
     * *.jpg
 
+## 로컬 디렉토리에서는 삭제하지 않지만 git에서는 삭제'
+* 로컬 디렉토리에서는 파일을 유지하고 저장소에서만 삭제한다.
+* git rm --cached test.txt
+
 ## 참고
 
 * 팀 개발을 위한 Git, GitHub 시작하기 

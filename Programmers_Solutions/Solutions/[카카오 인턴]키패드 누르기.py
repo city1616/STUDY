@@ -26,7 +26,7 @@ def solution(numbers, hand) :
                 l_dist = 5
             else :
                 pass
-            
+
             if r_dist == math.sqrt(2) :
                 r_dist = 2
             elif r_dist == math.sqrt(5) :

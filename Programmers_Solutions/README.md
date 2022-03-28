@@ -17,4 +17,6 @@
 |11 | Level 1 | 나머지가 1이 되는 수 찾기     | 월간 코드 챌린지 시즌3              | Python |
 |12 | Level 1 | 최소직사각형               | 위클리 챌린지                      | Python |
 |13 | Level 1 | [1차] 비밀지도             | 2018 KAKAO BLIND RECRUITMENT   | Python |
-|14 | Level 1 | 
+|14 | Level 1 | 부족한 금액 계산하기         | 위클리 챌린지                      | Python |
+|15 | Level 1 | 소수 만들기                | Summer/Winter Coding(~2018)    | Python |
+|16 | Level 1 | 예산                     | Summer/Winter Coding(~2018)    | Python |

@@ -14,11 +14,13 @@ def solution(N, stages) :
         if c != 0 and p != 0 :
             stage[i] = c / p
     print(stage)
-    stage = sorted(stage.values(), reverse = True)
+    # stage = sorted(stage.items(), reverse = False)
+    stage = sorted(stage.items(), reverse = True, key = lambda item : item[1]) # value 값으로 내림차순 정렬
     print(stage)
     # for i in stage :
     #     print(i[0], end = " ")
-    # for i in s 
+    answer = [i[0] for i in stage] # == sorted(stage, key = lambda x : stage[x], reverse = True)
+    print(answer)
     return answer
 
 a = 5
@@ -29,4 +31,4 @@ print()
 
 a = 4
 b = [4,4,4,4,4]
-# solution(a, b)
+solution(a, b)

@@ -20,3 +20,7 @@
 |14 | Level 1 | 부족한 금액 계산하기         | 위클리 챌린지                      | Python |
 |15 | Level 1 | 소수 만들기                | Summer/Winter Coding(~2018)    | Python |
 |16 | Level 1 | 예산                     | Summer/Winter Coding(~2018)    | Python |
+|17 | Level 1 | 3진법 뒤집기              | 월간 코드 챌린지 시즌1               | Python |
+|18 | Level 1 | 음양 더하기               | 월간 코드 챌린지 시즌2               | Python |
+|19 | Level 1 | 약수의 개수와 덧셈          | 월간 코드 챌린지 시즌2               | Python |
+|20 | Level 1 | 실패율                   | 2019 KAKAO BLIND RECRUITMENT    | Python |

@@ -25,3 +25,4 @@
 |19 | Level 1 | 약수의 개수와 덧셈          | 월간 코드 챌린지 시즌2               | Python |
 |20 | Level 1 | 실패율                   | 2019 KAKAO BLIND RECRUITMENT    | Python |
 |21 | Level 2 | 가장 큰 수                | 정렬                             | Python |
+|22 | Level 2 | 프린터                   | 스택 / 큐                         | Python |

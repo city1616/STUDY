@@ -26,4 +26,4 @@
 |20 | Level 1 | 실패율                   | 2019 KAKAO BLIND RECRUITMENT    | Python |
 |21 | Level 2 | 가장 큰 수                | 정렬                             | Python |
 |22 | Level 2 | 프린터                   | 스택 / 큐                         | Python |
-|23 | Level 2 | 
+|23 | Level 2 | 기능개발                  | 스택 / 큐                        | Python |

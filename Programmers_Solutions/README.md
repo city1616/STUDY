@@ -27,3 +27,5 @@
 |21 | Level 2 | 가장 큰 수                | 정렬                             | Python |
 |22 | Level 2 | 프린터                   | 스택 / 큐                         | Python |
 |23 | Level 2 | 기능개발                  | 스택 / 큐                        | Python |
+|24 | Level 2 | 숫자의 표현               | 연습문제                          | Python |
+|25 | Level 2 | JadenCase 문자열 만들기    | 연습문제                          | Python |

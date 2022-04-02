@@ -30,3 +30,4 @@
 |24 | Level 2 | 숫자의 표현               | 연습문제                          | Python |
 |25 | Level 2 | JadenCase 문자열 만들기    | 연습문제                          | Python |
 |26 | Level 2 | N개의 최소공배수           | 연습문제                          | Python |
+|27 | Level 2 | 124 나라의 숫자           | 연습문제                          | Python |

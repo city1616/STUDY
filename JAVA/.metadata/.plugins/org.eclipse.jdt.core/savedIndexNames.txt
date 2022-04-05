@@ -1,7 +1,0 @@
-INDEX VERSION 1.127+/Users/munseungwoo/Documents/Study/Java Practice/.metadata/.plugins/org.eclipse.jdt.core
-2772623022.index
-1348367969.index
-2901709445.index
-735665663.index
-3377932251.index
-1564333810.index

@@ -1,1 +1,0 @@
-alert('Outer JavaScript yeah!');

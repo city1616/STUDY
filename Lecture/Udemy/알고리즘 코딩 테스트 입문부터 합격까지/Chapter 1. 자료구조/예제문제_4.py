@@ -5,19 +5,20 @@ import sys
 
 input = sys.stdin.readline
 
-title = dict()
-t = []
+book = dict()
+candi = []
 
 for _ in range(int(input())) :
-    s = input().rstrip()
-    if s in title :
-        title[s] += 1
+    title = input().rstrip()
+    if title in book :
+        book[title] += 1
     else :
-        title[s] = 1
+        book[title] = 1
 
-print(title)
-for key, val in title.items() :
-    if val == max(title.values()):
-        t.append(key)
+print(book)
 
-print(sorted(t)[0])
+for key, val in book.items() :
+    if val == max(book.values()):
+        candi.append(key)
+
+print(sorted(candi)[0])

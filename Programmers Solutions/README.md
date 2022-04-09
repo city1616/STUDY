@@ -32,4 +32,4 @@
 |26 | Level 2 | N개의 최소공배수           | 연습문제                          | Python |
 |27 | Level 2 | 124 나라의 숫자           | 연습문제                          | Python |
 |28 | Level 2 | 최댓값과 최솟값            | 연습문제                           | Python |
-|29 | Level 2 |    
+|29 | Level 2 | 소수 찾기                | 완전탐색                           | Python |

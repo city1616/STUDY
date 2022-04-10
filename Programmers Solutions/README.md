@@ -33,3 +33,4 @@
 |27 | Level 2 | 124 나라의 숫자           | 연습문제                          | Python |
 |28 | Level 2 | 최댓값과 최솟값            | 연습문제                           | Python |
 |29 | Level 2 | 소수 찾기                | 완전탐색                           | Python |
+|30 | Level 2 | 주식가격                 | 스택 / 큐                          | Python |

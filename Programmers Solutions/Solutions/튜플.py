@@ -18,8 +18,8 @@ def solution(s) :
     print("t :", t)
     answer.append(t[0][0])
     for i in t :
-        
-
+           
+  
     return answer
 
 # solution("{{2},{2,1},{2,1,3},{2,1,3,4}}")

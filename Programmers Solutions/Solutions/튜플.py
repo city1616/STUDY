@@ -26,6 +26,7 @@ def solution(s) :
         for j in i :
             if j not in answer :
                 answer.append(j)
+                
     print("answer :", answer)
   
     return answer

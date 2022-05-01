@@ -36,4 +36,5 @@
 |30 | Level 2 | 주식가격                 | 스택 / 큐                          | Python |
 |31 | Level 2 | 다리를 지나는 트럭         | 스택 / 큐                          | Python |
 |32 | Level 2 | 튜플                    | 2019 카카오 개발자 겨울 인턴십         | Python |
-|33 | Level 2 | 다음 큰 숫자              | 연습문제                           | Python | 
+|33 | Level 2 | 다음 큰 숫자              | 연습문제                           | Python |
+|34 | Level 2 | 올바른 괄호               | 연습문제                           | Python |

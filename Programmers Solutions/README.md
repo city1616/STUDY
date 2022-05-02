@@ -38,3 +38,4 @@
 |32 | Level 2 | 튜플                    | 2019 카카오 개발자 겨울 인턴십         | Python |
 |33 | Level 2 | 다음 큰 숫자              | 연습문제                           | Python |
 |34 | Level 2 | 올바른 괄호               | 연습문제                           | Python |
+|35 | Level 2 | 더 맵게                  | 힙(Heap)                         | Python |

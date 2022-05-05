@@ -40,3 +40,4 @@
 |34 | Level 2 | 올바른 괄호               | 연습문제                           | Python |
 |35 | Level 2 | 더 맵게                  | 힙(Heap)                         | Python |
 |36 | Level 2 | 최솟값 만들기             | 연습문제                            | Python |
+|37 | Level 2 | 괄호 회전하기             | 월간 코드 챌린지 시즌2                 | Python |

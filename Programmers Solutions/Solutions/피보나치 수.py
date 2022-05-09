@@ -9,8 +9,9 @@ def Fibo(a) :
     elif a == 1 :
         return 1
     else :
-        return Fibo(a - 1) + Fibo(a - 2)
+        return (Fibo(a - 1) % 1234567) + (Fibo(a - 2) % 1234567)
 
 solution(3) # 2
 solution(5) # 5
+solution(100000)
  

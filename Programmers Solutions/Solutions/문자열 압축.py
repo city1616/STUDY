@@ -12,7 +12,7 @@ def solution(s) :
     print("s_dict :", s_dict)
 
     return answer
-
+ 
 
 solution("aabbaccc") # 7
 # solution("ababcdcdababcdcd") # 9

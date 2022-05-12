@@ -1,3 +1,5 @@
+from collections import deque
+
 def solution(s) :
     answer = 0
 
@@ -11,7 +13,7 @@ def solution(s) :
     
     print("s_dict :", s_dict)
 
-    
+
 
     return answer
  

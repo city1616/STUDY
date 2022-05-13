@@ -13,7 +13,7 @@ def solution(s) :
     
     print("s_dict :", s_dict)
 
-
+    print("length :", len(s))
 
     return answer
  

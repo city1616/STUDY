@@ -15,6 +15,16 @@ def solution(s) :
 
     print("length :", len(s))
 
+    for i in range(1, len(s) + 1) :
+        print("i :", i)
+        temp = []
+        t = ""
+        for c in s :
+            t += c
+            if len(t) == i :
+                temp.append(t)
+                t = ""
+        print("temp :", temp)
     return answer
  
 

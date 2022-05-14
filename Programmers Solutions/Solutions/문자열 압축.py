@@ -26,7 +26,7 @@ def solution(s) :
                 t = ""
         print("temp :", temp)
     return answer
- 
+
 
 solution("aabbaccc") # 7
 # solution("ababcdcdababcdcd") # 9

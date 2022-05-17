@@ -33,7 +33,8 @@ def solution(p) :
                 second_c += 1
             if first_c == second_c :
                 v += p[i + 1 :]
-                break
+                break  
+            
 
     return answer
 

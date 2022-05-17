@@ -31,10 +31,10 @@ def solution(p) :
                 first_c += 1
             else :
                 second_c += 1
-            if first_c == second_c :
+            if first_c == second_c : 
                 v += p[i + 1 :]
                 break  
-            
+
 
     return answer
 

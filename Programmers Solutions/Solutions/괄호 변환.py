@@ -3,41 +3,72 @@ def solution(p) :
     
     print("p :", p)
 
-    first_c, second_c = 0, 0
-
-    for c in p :
-        if c == "(" :
-            first_c += 1
-        else :
-            second_c += 1
-
-    print("first_c :", first_c)
-    print("second_c :", second_c)
-    
-    p_mod = p
-    for _ in range(int(len(p) / 2)) :
-        p_mod = p_mod.replace("()", "")
-
-    print("p_mod :", p_mod)
-    u, v = "", ""
-
-    if p_mod == "" :
+    if check(p) :
         print("올바른 괄호 문자열")
         return p
     else :
-        for i in range(len(p)) :
-            u += p[i]
-            if p[i] == "(" :
+        u, v = div(p)
+        if check(u) :
+            answer += u
+        else :
+            answer += total(u)
+        if check(v) :
+            answer += v
+        else :
+            while True :
+                u, v = div(v)
+                if check(u) :
+                    answer += u
+                else :
+                    answer += total(u)
+                if check(v) :
+                    answer += v
+                    break
+                elif v == "" :
+                    break
+    # print("u :", u, "v :", v)
+    print("answer :", answer)
+    return answer
+
+def check(s) :
+    for _ in range(int(len(s) / 2)) :
+        s = s.replace("()", "")
+        if s == "" :
+            break
+    if s :
+        return False
+    else :
+        return True
+
+def div(s) :
+    u, v = "", ""
+    first_c, second_c = 0, 0
+    for i in range(len(s)) :
+            u += s[i]
+
+            if s[i] == "(" :
                 first_c += 1
             else :
                 second_c += 1
+
             if first_c == second_c : 
-                v += p[i + 1 :]
-                break  
+                v += s[i + 1 :]
+                break
+    return u, v
 
-
-    return answer
+def total(s) :
+    tmp = ""
+    for c in s[1 : -1] :
+        if c == "(" :
+            tmp += ")"
+        else :
+            tmp += "("
+    return "(" + tmp + ")"
 
 # solution("(()())()") # "(()())()"
-solution(")(") # "()"
+# solution(")(") # "()"
 # solution("()))((()") # "()(())()"
+# solution(")()(()")
+# solution("))))((((")
+# solution("))(()(")
+solution("))()((")

@@ -7,26 +7,8 @@ def solution(p) :
         print("올바른 괄호 문자열")
         return p
     else :
-        u, v = div(p)
-        if check(u) :
-            answer += u
-        else :
-            answer += total(u)
-        if check(v) :
-            answer += v
-        else :
-            while True :
-                u, v = div(v)
-                if check(u) :
-                    answer += u
-                else :
-                    answer += total(u)
-                if check(v) :
-                    answer += v
-                    break
-                elif v == "" :
-                    break
-    # print("u :", u, "v :", v)
+        answer += div(p)
+            
     print("answer :", answer)
     return answer
 
@@ -41,6 +23,8 @@ def check(s) :
         return True
 
 def div(s) :
+    if s == "" :
+        return ""
     u, v = "", ""
     first_c, second_c = 0, 0
     for i in range(len(s)) :
@@ -54,7 +38,10 @@ def div(s) :
             if first_c == second_c : 
                 v += s[i + 1 :]
                 break
-    return u, v
+    if check(u) :
+        return u + div(v)
+    else :
+        return "(" + div(v) + ")" + total(u)
 
 def total(s) :
     tmp = ""
@@ -63,7 +50,7 @@ def total(s) :
             tmp += ")"
         else :
             tmp += "("
-    return "(" + tmp + ")"
+    return tmp
 
 # solution("(()())()") # "(()())()"
 # solution(")(") # "()"

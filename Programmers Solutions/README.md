@@ -44,3 +44,4 @@
 |38 | Level 2 | 피보나치 수              | 연습문제                            | Python |
 |39 | Level 2 | 문자열 압축              | 2020 KAKAO BLIND RECRUITMENT      | Python |
 |40 | Level 2 | 괄호 변환               | 2020 KAKAO BLIND RECRUITMENT      | Python |
+|41 | Level 2 | 전화번호 목록            | 해시                                | Python |

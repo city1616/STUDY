@@ -10,7 +10,7 @@ def solution(phone_book) :
             return False
     print(True)  
     return True
-
+ 
 solution(["119", "97674223", "1195524421"]) # false
 # solution(["123","456","789"]) # true
 # solution(["12","123","1235","567","88"]) # false 

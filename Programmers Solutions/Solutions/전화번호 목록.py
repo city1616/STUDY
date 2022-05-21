@@ -1,16 +1,14 @@
 def solution(phone_book) :
 
-    phone_book = sorted(phone_book, key = lambda x : len(x)) # 길이 순서대로 정렬
+    phone_book = sorted(phone_book)
     print("phone_book :", phone_book)
 
-    for i in range(len(phone_book)) :
-        for j in range(i + 1, len(phone_book)) :
-
-            if len(phone_book[i]) == len(phone_book[j]) :
-                continue
-            elif phone_book[i] == phone_book[j][: len(phone_book[i])] :
-                return False
-
+    for i in range(len(phone_book) - 1) :
+        print(phone_book[i], phone_book[i + 1][ : len(phone_book[i])])
+        if phone_book[i] == phone_book[i + 1][: len(phone_book[i])] :
+            print(False)
+            return False
+    print(True)
     return True
 
 solution(["119", "97674223", "1195524421"]) # false

@@ -1,5 +1,5 @@
 def solution(phone_book) :
-
+ 
     phone_book = sorted(phone_book)
     print("phone_book :", phone_book)
 
@@ -9,7 +9,7 @@ def solution(phone_book) :
             print(False)
             return False
 
-    print(True)  
+    print(True)
     return True
 
 solution(["119", "97674223", "1195524421"]) # false

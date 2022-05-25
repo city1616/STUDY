@@ -22,3 +22,10 @@
 |16 | Level 1 | 1936.            | 1대1 가위바위보                      | Python |
 |17 | Level 1 | 1933.            | 간단한 N 의 약수                     | Python |
 |18 | Level 1 | 1938.            | 아주 간단한 계산기                    | Python |
+|19 | Level 1 | 2025.            | N줄덧셈                            | Python |
+|20 | Level 2 | 1859.            | 백만 장자 프로젝트                    | Python |
+|21 | Level 2 | 1926.            | 간단한 369게임                      | Python |
+|22 | Level 2 | 2007.            | 패턴 마디의 길이                     | Python |
+|23 | Level 2 | 1989.            | 초심자의 회문 검사                    | Python |
+|24 | Level 2 | 2005.            | 파스칼의 삼각형                      | Python |
+|25 | Level 2 | 2001.            | 파리 퇴치                          | Python |

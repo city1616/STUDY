@@ -29,3 +29,7 @@
 |23 | Level 2 | 1989.            | 초심자의 회문 검사                    | Python |
 |24 | Level 2 | 2005.            | 파스칼의 삼각형                      | Python |
 |25 | Level 2 | 2001.            | 파리 퇴치                          | Python |
+|26 | Level 2 | 1986.            | 지그재그 숫자                       | Python |
+|27 | Level 2 | 1984.            | 중간 평균값 구하기                   | Python |
+|28 | Level 2 | 1983.            | 조교의 성적 매기기                   | Python |
+|29 | Level 2 | 1979.            | 어디에 단어가 들어갈 수 있을까          | Python |

@@ -16,6 +16,7 @@ for test_case in range(1, T + 1) :
                 cnt += 1
             else :
                 cnt = 0
+
                 
     print("cnt :", cnt)
     print("#" + str(test_case))

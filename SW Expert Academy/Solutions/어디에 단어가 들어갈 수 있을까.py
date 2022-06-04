@@ -17,7 +17,7 @@ for test_case in range(1, T + 1) :
             else :
                 cnt = 0
 
-                
+
     print("cnt :", cnt)
     print("#" + str(test_case))
 
@@ -25,4 +25,4 @@ for test_case in range(1, T + 1) :
 # 1 1 1 1 0
 # 0 0 1 0 0
 # 0 1 1 1 1
-# 1 1 1 0 1
+# 1 1 1 0 1 

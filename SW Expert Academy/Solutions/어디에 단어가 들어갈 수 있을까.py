@@ -13,12 +13,12 @@ for test_case in range(1, T + 1) :
     for i in range(N) :
         for j in range(N) :
             if p[i][j] == 1 :
-                cnt += 1
+                cnt += 1 
             else :
                 cnt = 0
 
     print("cnt :", cnt)
-    print("#" + str(test_case))
+    print("#" + str(test_case)) 
 
 # 0 0 1 1 1
 # 1 1 1 1 0

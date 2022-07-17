@@ -33,3 +33,6 @@
 |27 | Level 2 | 1984.            | 중간 평균값 구하기                   | Python |
 |28 | Level 2 | 1983.            | 조교의 성적 매기기                   | Python |
 |29 | Level 2 | 1979.            | 어디에 단어가 들어갈 수 있을까          | Python |
+|30 | Level 2 | 1959.            | 두 개의 숫자열                      | Python |
+|31 | Level 2 | 1974.            | 스도쿠 검증                         | Python |
+|32 | Level 2 | 1961.            | 숫자 배열 회전                      | Python |

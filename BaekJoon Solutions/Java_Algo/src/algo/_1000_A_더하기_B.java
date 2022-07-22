@@ -1,3 +1,5 @@
+package algo;
+
 import java.util.Scanner;
 
 public class _1000_A_더하기_B {

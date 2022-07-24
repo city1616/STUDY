@@ -1,7 +1,6 @@
 package algo;
 
 public class _10172_개 {
-
 	public static void main(String[] args) {
 		System.out.println("|\\_/|\n" + 
 				           "|q p|   /}\n" + 
@@ -9,5 +8,4 @@ public class _10172_개 {
 				           "|\"^\"`    |\n" + 
 			        	   "||_/=\\\\__|");
 	}
-
 }

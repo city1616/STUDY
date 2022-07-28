@@ -1,6 +1,14 @@
 # 해당 파일 무시
 .DS_Store
 test.py
+BaekJoon Solutions/Java/.classpath
+BaekJoon Solutions/Java/.project
+BaekJoon Solutions/Java/.settings/
+BaekJoon Solutions/.gitignore
+BaekJoon Solutions/Java/.gitignore
+BaekJoon Solutions/Java/src/algo/test.java
 
 # 해당 폴더 무시
 /Programmers Solutions/다른 사람 풀이/
+/.metadata
+BaekJoon Solutions/RemoteSystemsTempFiles/

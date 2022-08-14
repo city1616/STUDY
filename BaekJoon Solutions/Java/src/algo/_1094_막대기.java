@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _1094_막대기 {

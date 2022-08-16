@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _1075_나누기 {

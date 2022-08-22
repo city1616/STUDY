@@ -1,4 +1,4 @@
-package 삼성_SW_역량_테스트_기출_문제;
+package algo;
 
 import java.io.*;
 import java.util.*;

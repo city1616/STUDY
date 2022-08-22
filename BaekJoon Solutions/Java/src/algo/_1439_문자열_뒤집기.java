@@ -1,8 +1,8 @@
-package Greedy;
+package algo;
 
 import java.io.*;
 
-public class Q3_문자열_뒤집기 {
+public class _1439_문자열_뒤집기 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String S = br.readLine();

@@ -1,8 +1,8 @@
-package Implementation;
+package algo;
 
 import java.io.*;
 
-public class Q7_럭키_스트레이트 {
+public class _18406_럭키_스트레이트 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String S = br.readLine();

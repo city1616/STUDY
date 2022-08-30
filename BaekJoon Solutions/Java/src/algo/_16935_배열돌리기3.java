@@ -1,7 +1,9 @@
+package algo;
+
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_16935_배열돌리기3_서울_20반_문승우 {
+public class _16935_배열돌리기3 {
 	
 	static int N, M;
 	

@@ -1,7 +1,9 @@
+package algo;
+
 import java.io.*;
 import java.util.*;
 
-public class Main_bj_17070_파이프옮기기1_서울_20반_문승우 {
+public class _17070_파이프옮기기1 {
 	
 	static int N;
 	static int[][] map;

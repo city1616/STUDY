@@ -10,6 +10,7 @@ public class _11718_그대로출력하기 {
 		
 		String line;
 		while((line = br.readLine()) != null) {
+			if(line == null || line.isEmpty()) break;
 			sb.append(line).append("\n");
 		}
 		System.out.print(sb);

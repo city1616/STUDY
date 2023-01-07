@@ -5,59 +5,68 @@ import java.util.*;
 
 public class _1325_효율적인해킹 {
 	
-	static int N, M, cnt;
-	static List<Integer>[] g;
-	static boolean[] visit;
+    private static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+    private static boolean[] visited;
+    private static int[] result;
 
-	public static void main(String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
-		
-		st = new StringTokenizer(br.readLine(), " ");
-		N = Integer.parseInt(st.nextToken());
-		M = Integer.parseInt(st.nextToken());
-		
-		g = new List[N];
-		for(int i = 0; i < N; i++) g[i] = new ArrayList<>();
-		
-		for(int i = 0; i < M; i++) {
-			st = new StringTokenizer(br.readLine(), " ");
-			int to = Integer.parseInt(st.nextToken()) - 1;
-			int from = Integer.parseInt(st.nextToken()) - 1;
-			g[from].add(to);
-		}
-		int max = -1;
-		ArrayList<Integer> list = new ArrayList<>();
-		for(int i = 0; i < N; i++) {
-			cnt = 0;
-			visit = new boolean[N];
-			dfs(i);
-			if(max == -1) {
-				list.add(i + 1);
-				max = cnt;
-			} else {
-				if(cnt > max) {
-					list = new ArrayList<>();
-					list.add(i + 1);
-					max = cnt;
-				} else if(cnt == max) {
-					list.add(i + 1);
-				}
-			}
-		}
-		Collections.sort(list);
-		for(int i : list) System.out.print(i + " ");
-		System.out.println();
-	}
-	
-	static void dfs(int i) {
-		visit[i] = true;
-		cnt++;
-//		System.out.println(cnt);
-		for(int j : g[i]) {
-			if(!visit[j]) {
-				dfs(j);
-			}
-		}
-	}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        String[] nm = br.readLine().split(" ");
+
+        int n = Integer.parseInt(nm[0]);
+        int m = Integer.parseInt(nm[1]);
+
+        for (int i = 0; i <= n; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < m; i++) {
+            String[] fromTo = br.readLine().split(" ");
+            int from = Integer.parseInt(fromTo[0]);
+            int to = Integer.parseInt(fromTo[1]);
+
+            graph.get(from).add(to);
+        }
+        result = new int[n + 1];
+
+        for (int i = 1; i <= n; i++) {
+            visited = new boolean[n + 1];
+            getMaxPen(i);
+        }
+
+        int max = 0;
+
+        for (int i = 1; i <= n; i++) {
+            max = Math.max(max, result[i]);
+        }
+
+        for (int i = 1; i <= n; i++) {
+            if(result[i] == max) {
+                bw.write(i + " ");
+            }
+        }
+
+        bw.flush();
+        bw.close();
+    }
+
+    private static void getMaxPen(int x) {
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(x);
+        visited[x] = true;
+
+        while(!queue.isEmpty()) {
+            int front = queue.remove();
+            for(int value : graph.get(front)) {
+                if(!visited[value]) {
+                    visited[value] = true;
+                    queue.add(value);
+                    result[value]++;
+                }
+            }
+        }
+    }
 }

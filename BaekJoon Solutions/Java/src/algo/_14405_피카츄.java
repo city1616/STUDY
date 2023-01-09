@@ -11,18 +11,30 @@ public class _14405_피카츄 {
 		
 		for(int i = 0; i < S.length(); i++) {
 			if(S.charAt(i) == 'p') {
+				if(i == S.length() - 1) {
+					flag = false;
+					break;
+				}
 				if(S.charAt(i + 1) != 'i') {
 					flag = false;
 					break;
 				}
 				i++;
 			} else if(S.charAt(i) == 'k') {
+				if(i == S.length() - 1) {
+					flag = false;
+					break;
+				}
 				if(S.charAt(i + 1) != 'a') {
 					flag = false;
 					break;
 				}
 				i++;
 			} else if(S.charAt(i) == 'c') {
+				if(i == S.length() - 1 || i == S.length() - 2) {
+					flag = false;
+					break;
+				}
 				if(S.charAt(i + 1) == 'h' && S.charAt(i + 2) == 'u') {
 					i += 2;
 				} else {

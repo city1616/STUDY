@@ -24,7 +24,7 @@ public class _15649_N과M_1 {
 		
 		visit = new boolean[N];
 		perm(0);
-		System.out.print(sb);
+		System.out.print(sb); 
 	}
 	
 	static void perm(int m) {

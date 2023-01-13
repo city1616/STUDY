@@ -5,7 +5,7 @@ import java.util.*;
 
 public class _15649_N과M_1 {
 
-	static int N, M;
+	static int N, M,ans;
 	static boolean[] visit;
 	static int[] a, b;
 	static StringBuilder sb = new StringBuilder();

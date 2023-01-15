@@ -27,30 +27,21 @@ public class _15649_N과M_1 {
 		System.out.print(sb); 
 	}
 	
-	static void perm(int m) {
-		if(m == M) {
-			for(int j : b) sb.append(j).append(" ");
+	static void perm(int depth) {
+		if(depth == M) {
+			for(int i = 0; i < M; i++) {
+				sb.append(b[i]).append(" ");
+			}
 			sb.append("\n");
 			return;
 		}
 		for(int i = 0; i < N; i++) {
-			// if(!visit[i]) {
-			// 	visit[i] = true;
-				b[m] = a[i];
-				perm(m + 1);
-			// }
-		}
-	}
-	
-	static void comb(int m, int start) {
-		if(m == M) {
-			for(int j : b) sb.append(j).append(" ");
-			sb.append("\n");
-			return;
-		}
-		for(int i = start; i < N; i++) {
-			b[m] = a[i];
-			comb(m + 1, start);
+			if(!visit[i]) {
+				visit[i] = true;
+				b[depth] = a[i];
+				perm(depth + 1);
+				visit[i] = false;
+			}
 		}
 	}
 }

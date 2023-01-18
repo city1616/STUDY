@@ -11,7 +11,7 @@ public class _15650_N과M_2 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
+		StringTokenizer st; 
 		
 		st = new StringTokenizer(br.readLine(), " ");
 		N = Integer.parseInt(st.nextToken());

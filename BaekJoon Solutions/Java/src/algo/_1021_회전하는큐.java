@@ -28,10 +28,11 @@ public class _1021_회전하는큐 {
                 cnt += 1;
                 q.offer(now);
             }
-            if(cnt > q.size() / 2) cnt = q.size() - cnt;
+            int qSize = q.size() + 1;
+            if(cnt > qSize / 2) cnt = qSize - cnt;
 
             ans += cnt;
-            System.out.println("q size : " + q.size() + " cnt : " + cnt + " ans : " + ans);
+//            System.out.println("q size : " + q.size() + " cnt : " + cnt + " ans : " + ans);
         }
         System.out.println(ans);
         br.close();

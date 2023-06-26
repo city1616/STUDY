@@ -12,13 +12,11 @@ public class _2446_별찍기_9 {
         for(int i = 0; i < N; i++) {
             for(int j = 0; j < i; j++) sb.append(" ");
             for(int j = 0; j < (N - i) * 2 - 1; j++) sb.append("*");
-            for(int j = 0; j < i; j++) sb.append(" ");
             sb.append("\n");
         }
         for(int i = N - 1; i > 0; i--) {
             for(int j = 0; j < i - 1; j++) sb.append(" ");
             for(int j = 0; j < (N - i) * 2 + 1; j++) sb.append("*");
-            for(int j = 0; j < i - 1; j++) sb.append(" ");
             sb.append("\n");
         }
         System.out.print(sb);

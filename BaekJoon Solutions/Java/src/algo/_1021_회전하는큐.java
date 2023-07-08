@@ -18,12 +18,10 @@ public class _1021_회전하는큐 {
         st = new StringTokenizer(br.readLine(), " ");
         for(int i = 0; i < M; i++) {
             int num = Integer.parseInt(st.nextToken());
-
             int cnt = 0;
 
             while(true) {
                 int now = q.poll();
-
                 if(now == num) break;
                 cnt += 1;
                 q.offer(now);

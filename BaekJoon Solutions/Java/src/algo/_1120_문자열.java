@@ -18,9 +18,7 @@ public class _1120_문자열 {
 				if(A.charAt(j) != B.charAt(j + i)) {
 					cnt++;
 				}
-				if(cnt < min) {
-					min = cnt;
-				}
+				if(cnt < min) min = cnt;
 			}
 		}
 		System.out.println(min);

@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_bootstrap5",
     "sorl.thumbnail",
+    "widget_tweaks",
     # locals apps
     "accounts",
     "mall_test",
@@ -142,6 +143,9 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = env.str("STATIC_ROOT", default=BASE_DIR / "staticfiles")
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = env.str("MEDIA_ROOT", default=BASE_DIR / "mediafiles")

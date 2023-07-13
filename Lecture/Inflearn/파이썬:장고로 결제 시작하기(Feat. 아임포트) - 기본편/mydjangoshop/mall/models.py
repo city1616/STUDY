@@ -1,4 +1,8 @@
+from django.core.validators import MinValueValidator
 from django.db import models
+from django.db.models import UniqueConstraint
+
+from accounts.models import User
 
 
 class Category(models.Model):
@@ -28,9 +32,41 @@ class Product(models.Model):
         choices=Status.choices, default=Status.INACTIVE, max_length=1
     )
     photo = models.ImageField(upload_to="mall/product/photo/%Y/%m/%d")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"<{self.pk}> {self.name}"
 
     class Meta:
         verbose_name = verbose_name_plural = "상품"
+        ordering = ["-pk"]
+
+
+class CartProduct(models.Model):
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        db_constraint=False,
+        related_name="cart_product_set",
+    )
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE,
+        db_constraint=False,
+    )
+    quantity = models.PositiveIntegerField(
+        default=1,
+        validators=[
+            MinValueValidator(1),
+        ],
+    )
+
+    def __str__(self):
+        return f"<{self.pk}> {self.product.name} - {self.quantity}"
+
+    class Meta:
+        verbose_name = verbose_name_plural = "장바구니 상품"
+        constraints = [
+            UniqueConstraint(fields=["user", "product"], name="unique_user_product")
+        ]

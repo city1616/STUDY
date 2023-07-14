@@ -144,10 +144,11 @@ def order_pay(request, pk):
     if not order.can_pay():
         messages.error(request, "현재 결제를 할 수 없는 주문입니다.")
         return redirect(order)
+        # return redirect("order_detail", order.pk)
 
     payment = OrderPayment.create_by_order(order)
 
-    # check_url = reverse("order_check", args=[order.pk, payment.pk])
+    check_url = reverse("order_check", args=[order.pk, payment.pk])
 
     payment_props = {
         "merchant_uid": payment.merchant_uid,
@@ -155,8 +156,7 @@ def order_pay(request, pk):
         "amount": payment.desired_amount,
         "buyer_name": payment.buyer_name,
         "buyer_email": payment.buyer_email,
-        "m_redirect_url": "root",
-        # "m_redirect_url": request.build_absolute_uri(check_url),
+        "m_redirect_url": request.build_absolute_uri(check_url),
     }
 
     return render(
@@ -165,6 +165,26 @@ def order_pay(request, pk):
         {
             "portone_shop_id": settings.PORTONE_SHOP_ID,
             "payment_props": payment_props,
-            "next_url": "root",
+            "next_url": check_url,
+        },
+    )
+
+
+@login_required
+def order_check(request, order_pk, payment_pk):
+    payment = get_object_or_404(OrderPayment, pk=payment_pk, order__pk=order_pk)
+    payment.update()
+    # return redirect(payment.order)
+    return redirect("order_detail", order_pk)
+
+
+@login_required
+def order_detail(request, pk):
+    order = get_object_or_404(Order, pk=pk, user=request.user)
+    return render(
+        request,
+        "mall/order_detail.html",
+        {
+            "order": order,
         },
     )

@@ -8,4 +8,10 @@ urlpatterns = [
     # path("orders/", views.order_list, name="order_list"),
     path("orders/new/", views.order_new, name="order_new"),
     path("orders/<int:pk>/pay/", views.order_pay, name="order_pay"),
+    path(
+        "orders/<int:order_pk>/check/<int:payment_pk>/",
+        views.order_check,
+        name="order_check",
+    ),
+    path("orders/<int:pk>/", views.order_detail, name="order_detail"),
 ]

@@ -66,3 +66,5 @@ public class _1966_프린터큐 {
         br.close();
     }
 }
+
+

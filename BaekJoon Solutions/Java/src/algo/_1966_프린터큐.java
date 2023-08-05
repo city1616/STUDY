@@ -12,51 +12,44 @@ public class _1966_프린터큐 {
         int T = Integer.parseInt(br.readLine());
 
         for(int tc = 0; tc < T; tc++) {
-            System.out.println("test case : " + tc);
+//            System.out.println("test case : " + tc);
             st = new StringTokenizer(br.readLine(), " ");
             int N = Integer.parseInt(st.nextToken());    // 문서의 개수
             int idx = Integer.parseInt(st.nextToken()); // 몇번째에 놓여 있는지를 나타내는 정수
             int val = 0;
             int cnt = 0;
 
-            ArrayDeque<Integer> q = new ArrayDeque<>();
+            LinkedList<int[]> q = new LinkedList<>();
             st = new StringTokenizer(br.readLine(), " ");
             for(int i = 0; i < N; i++) {
                 int num = Integer.parseInt(st.nextToken());
-                q.offer(num);
-                if(i == idx) val = num;
+                q.add(new int[] {i, num});
             }
 
+            while(!q.isEmpty()) {
+                int[] temp = q.poll();
+                boolean check = true;
 
-            while(true) {
-                int m_idx = 0;
-                int m_max = 0;
-
+                // 자기보다 큰 값이 있다면 뒤로 넘기기
                 for(int i = 0; i < q.size(); i++) {
-                    int now = q.poll();
-
-                    if(now > m_max && now >= val) {
-                        m_idx = i;
-                        m_max = now;
-                        System.out.println("idx : " + idx + " m_idx : " + m_idx + " m_max : " + m_max);
-                    }
-                    q.offer(now);
-                }
-                int qSize = q.size();
-                for(int i = 0; i < qSize; i++) {
-                    int out = q.poll();
-                    if(i == m_idx) {
-                        System.out.println("out : " + out);
+                    if(temp[1] < q.get(i)[1]) {
+                        q.add(temp);
+                        for(int j = 0; j < i; j++) {
+                            q.add(q.poll());
+                        }
+                        check = false;
                         break;
                     }
-                    q.offer(out);
                 }
 
-                cnt += 1;
-                if(idx == m_idx) break;
+                // 만약에 front에 가장 큰 값이 아니라면 다시 반복
+                if(check == false) continue;
 
-                idx -= 1;
-                if(idx < 0) idx = q.size() - 1;
+                // 만약 최고값이라면 poll했으니 count를 추가
+                cnt++;
+
+                // 만약 그값이 우리가 원하는 답이라면 멈추고 저장
+                if(temp[0] == idx) break;
             }
 
             sb.append(cnt).append("\n");

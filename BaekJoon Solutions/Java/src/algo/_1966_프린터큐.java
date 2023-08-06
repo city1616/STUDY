@@ -48,7 +48,7 @@ public class _1966_프린터큐 {
                 // 만약 최고값이라면 poll했으니 count를 추가
                 cnt++;
 
-                // 만약 그값이 우리가 원하는 답이라면 멈추고 저장
+                // 뽑은 값이 원하는 값이면 break
                 if(temp[0] == idx) break;
             }
 

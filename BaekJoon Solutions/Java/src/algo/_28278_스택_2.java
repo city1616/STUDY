@@ -21,12 +21,13 @@ public class _28278_스택_2 {
             int num = Integer.parseInt(S);
             if(num == 2) {
 
+                
             } else if(num == 3) {
 
             } else if(num == 4) {
 
             } else if(num == 5) {
-                
+
             }
         }
     }

@@ -6,6 +6,7 @@ import java.util.*;
 public class _28278_스택_2 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         int N = Integer.parseInt(br.readLine());
 
         ArrayDeque<Integer> q = new ArrayDeque<>();
@@ -20,15 +21,25 @@ public class _28278_스택_2 {
 
             int num = Integer.parseInt(S);
             if(num == 2) {
-                q.pollLast();
-                
+                if(!q.isEmpty()) {
+                    for(int j = 0; j < q.size() - 1; j++) {
+                        int a = q.pollLast();
+                        sb.append(a).append("\n");
+                    }
+                } else {
+                    sb.append(-1).append("\n");
+                }
             } else if(num == 3) {
-
+                sb.append(q.size()).append("\n");
             } else if(num == 4) {
-
+                if(q.isEmpty()) sb.append(1).append("\n");
+                else sb.append(0).append("\n");
             } else if(num == 5) {
-
+                if(q.size() == 0) sb.append(-1).append("\n");
+                else sb.append(q.pollLast()).append("\n");
             }
         }
+        System.out.print(sb);
+        br.close();
     }
 }

@@ -12,14 +12,17 @@ public class _28278_스택_2 {
         ArrayDeque<Integer> q = new ArrayDeque<>();
         for(int i = 0; i < N; i++) {
             String S = br.readLine();
+            int num = 0;
             if(S.length() > 1) {
                 StringTokenizer st = new StringTokenizer(S, " ");
                 int first = Integer.parseInt(st.nextToken());
                 int last = Integer.parseInt(st.nextToken());
+                num = 1;
                 q.offer(last);
+            } else {
+                num = Integer.parseInt(S);
             }
 
-            int num = Integer.parseInt(S);
             if(num == 2) {
                 if(!q.isEmpty()) {
                     for(int j = 0; j < q.size() - 1; j++) {

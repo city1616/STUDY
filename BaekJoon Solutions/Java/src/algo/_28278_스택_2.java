@@ -24,8 +24,6 @@ public class _28278_스택_2 {
                 num = Integer.parseInt(S);
             }
 
-            
-
             if(num == 2) {
                 if(!q.isEmpty()) {
                     for(int j = 0; j < q.size() - 1; j++) {

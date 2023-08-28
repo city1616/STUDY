@@ -22,25 +22,26 @@ public class _28278_스택_2 {
                 q.offer(last);
             } else {
                 num = Integer.parseInt(S);
-            }
 
-            if(num == 2) {
-                if(!q.isEmpty()) {
-                    for(int j = 0; j < q.size() - 1; j++) {
+                if(num == 2) {
+                    if(!q.isEmpty()) {
+                        sb.append(q.pollLast()).append("\n");
+                    } else {
+                        sb.append(-1).append("\n");
+                    }
+                } else if(num == 3) {
+                    sb.append(q.size()).append("\n");
+                } else if(num == 4) {
+                    if(q.isEmpty()) sb.append(1).append("\n");
+                    else sb.append(0).append("\n");
+                } else if(num == 5) {
+                    if(q.size() == 0) sb.append(-1).append("\n");
+                    else {
                         int a = q.pollLast();
                         sb.append(a).append("\n");
+                        q.offer(a);
                     }
-                } else {
-                    sb.append(-1).append("\n");
                 }
-            } else if(num == 3) {
-                sb.append(q.size()).append("\n");
-            } else if(num == 4) {
-                if(q.isEmpty()) sb.append(1).append("\n");
-                else sb.append(0).append("\n");
-            } else if(num == 5) {
-                if(q.size() == 0) sb.append(-1).append("\n");
-                else sb.append(q.pollLast()).append("\n");
             }
         }
         System.out.print(sb);

@@ -12,7 +12,6 @@ public class _28278_스택_2 {
         ArrayDeque<Integer> q = new ArrayDeque<>();
         for(int i = 0; i < N; i++) {
             String S = br.readLine();
-
             
             int num = 0;
             if(S.length() > 1) {

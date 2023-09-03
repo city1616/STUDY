@@ -10,6 +10,7 @@ public class _28278_스택_2 {
         int N = Integer.parseInt(br.readLine());
 
         ArrayDeque<Integer> q = new ArrayDeque<>();
+
         for(int i = 0; i < N; i++) {
             String S = br.readLine();
             

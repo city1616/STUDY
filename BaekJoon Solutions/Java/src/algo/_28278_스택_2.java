@@ -23,7 +23,6 @@ public class _28278_스택_2 {
                 q.offer(last);
             } else {
                 num = Integer.parseInt(S);
-
                 if(num == 2) {
                     if(!q.isEmpty()) {
                         sb.append(q.pollLast()).append("\n");

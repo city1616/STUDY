@@ -13,7 +13,6 @@ public class _1439_문자열_뒤집기 {
 				cnt++;
 			}
 		}
-		
 		System.out.println(++cnt / 2);
 	}
 }

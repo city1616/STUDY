@@ -17,7 +17,7 @@ public class _1427_소트인사이드 {
         
         Collections.sort(list, Collections.reverseOrder());
         for(int i = 0; i < list.size(); i++) sb.append(list.get(i));
-        
+
         System.out.println(sb);
         br.close();
     }

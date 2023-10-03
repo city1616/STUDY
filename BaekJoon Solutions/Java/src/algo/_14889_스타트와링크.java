@@ -77,6 +77,7 @@ public class _14889_스타트와링크 {
 			 linkTotal += graph[linkSelect[0]][linkSelect[1]];
 			return;
 		}
+		
 		for(int i = 0; i < N / 2; i++) {
 			if(!visit[i]) {
 				visit[i] = true;

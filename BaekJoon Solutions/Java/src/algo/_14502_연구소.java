@@ -52,6 +52,7 @@ public class _14502_연구소 {
 			BFS();
 			return;
 		}
+
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < M; j++) {
 				if(map[i][j] == 0) {

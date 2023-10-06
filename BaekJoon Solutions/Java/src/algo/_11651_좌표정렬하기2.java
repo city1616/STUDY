@@ -24,6 +24,7 @@ public class _11651_좌표정렬하기2 {
         for(int i = 0; i < N; i++) {
             sb.append(arr[i][0]).append(" ").append(arr[i][1]).append("\n");
         }
+
         System.out.println(sb);
         br.close();
     }

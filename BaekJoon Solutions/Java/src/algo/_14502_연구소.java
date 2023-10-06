@@ -99,6 +99,7 @@ public class _14502_연구소 {
 				}
 			}
 		}
+
 		if(cnt > result) {
 			result = cnt;
 		}

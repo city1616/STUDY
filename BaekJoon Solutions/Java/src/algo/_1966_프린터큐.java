@@ -28,7 +28,7 @@ public class _1966_프린터큐 {
 
             while(true) {
                 int now = q.poll();
-                if(now == find)
+//                if(now == find)
             }
 
         }

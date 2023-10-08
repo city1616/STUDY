@@ -60,6 +60,7 @@ public class _14889_스타트와링크 {
 			// System.out.println("start : " + Arrays.toString(start) + " link : " + Arrays.toString(link));
 			return;
 		}
+
 		for(int i = s; i < N; i++) {
 			peopleCheck[i] = true;
 			start[depth] = people[i];
@@ -76,6 +77,7 @@ public class _14889_스타트와링크 {
 			 linkTotal += graph[linkSelect[0]][linkSelect[1]];
 			return;
 		}
+		
 		for(int i = 0; i < N / 2; i++) {
 			if(!visit[i]) {
 				visit[i] = true;

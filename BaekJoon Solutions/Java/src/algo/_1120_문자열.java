@@ -10,17 +10,18 @@ public class _1120_문자열 {
 		String A = st.nextToken();
 		String B = st.nextToken();
 		int cnt = 0;
-		int min = Integer.MAX_VALUE;
+		int min = A.length();
 		
-		for(int i = 0; i < A.length() - B.length() + 1; i++) {
+		for(int i = 0; i < B.length() - A.length() + 1; i++) {
 			cnt = 0;
 			for(int j = 0; j < A.length(); j++) {
 				if(A.charAt(j) != B.charAt(j + i)) {
 					cnt++;
 				}
-				if(cnt < min) min = cnt;
 			}
+			if(cnt < min) min = cnt;
 		}
 		System.out.println(min);
+		br.close();
 	}
 }

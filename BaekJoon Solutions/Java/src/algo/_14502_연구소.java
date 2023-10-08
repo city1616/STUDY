@@ -22,6 +22,7 @@ public class _14502_연구소 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		map = new int[N][M];
@@ -51,6 +52,7 @@ public class _14502_연구소 {
 			BFS();
 			return;
 		}
+
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < M; j++) {
 				if(map[i][j] == 0) {
@@ -97,6 +99,7 @@ public class _14502_연구소 {
 				}
 			}
 		}
+
 		if(cnt > result) {
 			result = cnt;
 		}

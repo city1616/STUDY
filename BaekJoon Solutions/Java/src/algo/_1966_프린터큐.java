@@ -12,24 +12,47 @@ public class _1966_프린터큐 {
         int T = Integer.parseInt(br.readLine());
 
         for(int tc = 0; tc < T; tc++) {
+//            System.out.println("test case : " + tc);
             st = new StringTokenizer(br.readLine(), " ");
             int N = Integer.parseInt(st.nextToken());    // 문서의 개수
-            int find = Integer.parseInt(st.nextToken()); // 몇번째에 놓여 있는지를 나타내는 정수
+            int idx = Integer.parseInt(st.nextToken()); // 몇번째에 놓여 있는지를 나타내는 정수
+            int val = 0;
+            int cnt = 0;
 
-            ArrayDeque<Integer> q = new ArrayDeque<>();
-            int max = 0;
+            LinkedList<int[]> q = new LinkedList<>();
             st = new StringTokenizer(br.readLine(), " ");
             for(int i = 0; i < N; i++) {
                 int num = Integer.parseInt(st.nextToken());
-                q.offer(num);
-                if(num > max) max = num;
-                if(i == find) find = num;
+                q.add(new int[] {i, num});
+            }
+            
+            while(!q.isEmpty()) {
+                int[] temp = q.poll();
+                boolean check = true;
+
+                // 자기보다 큰 값이 있다면 뒤로 넘기기
+                for(int i = 0; i < q.size(); i++) {
+                    if(temp[1] < q.get(i)[1]) {
+                        q.add(temp);
+                        for(int j = 0; j < i; j++) {
+                            q.add(q.poll());
+                        }
+                        check = false;
+                        break;
+                    }
+                }
+
+                // 만약에 front에 가장 큰 값이 아니라면 다시 반복
+                if(check == false) continue;
+
+                // 만약 최고값이라면 poll했으니 count를 추가
+                cnt++;
+
+                // 뽑은 값이 원하는 값이면 break
+                if(temp[0] == idx) break;
             }
 
-            while(true) {
-                int now = q.poll();
-//                if(now == find)
-            }
+            sb.append(cnt).append("\n");
 
         }
         System.out.print(sb);

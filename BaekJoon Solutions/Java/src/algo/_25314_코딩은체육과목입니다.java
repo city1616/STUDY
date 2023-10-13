@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _25314_코딩은체육과목입니다 {

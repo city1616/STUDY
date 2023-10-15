@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _2743_단어길이재기 {

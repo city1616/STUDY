@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _10953_A더하기B_6 {

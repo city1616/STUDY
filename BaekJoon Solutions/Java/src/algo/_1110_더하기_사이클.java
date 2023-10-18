@@ -9,6 +9,7 @@ public class _1110_더하기_사이클 {
 		int intN = Integer.parseInt(N);
 		
 		int cnt = 1;
+
 		while(true) {
 			if(N.length() == 0) N = "0" + N;
 			int sum = 0;

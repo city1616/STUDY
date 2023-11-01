@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _24723_녹색거탑 {

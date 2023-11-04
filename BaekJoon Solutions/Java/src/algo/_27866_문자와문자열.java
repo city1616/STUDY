@@ -1,3 +1,5 @@
+package algo;
+
 import java.io.*;
 
 public class _27866_문자와문자열 {

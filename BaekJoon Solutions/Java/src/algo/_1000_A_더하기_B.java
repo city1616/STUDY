@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class _1000_A_더하기_B {
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();

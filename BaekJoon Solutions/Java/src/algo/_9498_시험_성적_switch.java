@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class _9498_시험_성적_switch {
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
 		int score = sc.nextInt();
+
 		String grade = null;
 		
 		switch(score / 10) {

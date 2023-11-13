@@ -33,8 +33,10 @@ public class _9506_약수들의합 {
             } else {
                 sb.append(N).append(" is NOT perfect.");
             }
+
             sb.append("\n");
         }
+
         System.out.print(sb);
         br.close();
     }

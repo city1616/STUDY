@@ -25,7 +25,7 @@ public class _1966_프린터큐 {
                 int num = Integer.parseInt(st.nextToken());
                 q.add(new int[] {i, num});
             }
-            
+
             while(!q.isEmpty()) {
                 int[] temp = q.poll();
                 boolean check = true;

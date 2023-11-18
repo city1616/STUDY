@@ -6,7 +6,6 @@ import java.util.*;
 public class _10814_나이순정렬 {
 
 	static class P implements Comparable<P> {
-
 		int age;
 		String name;
 		public P(int age, String name) {
@@ -18,7 +17,6 @@ public class _10814_나이순정렬 {
 			// if(this.age == o.age) return this.name.compareTo(o.name);
 			return Integer.compare(this.age, o.age);
 		}
-		
 	}
 	
 	public static void main(String[] args) throws Exception {

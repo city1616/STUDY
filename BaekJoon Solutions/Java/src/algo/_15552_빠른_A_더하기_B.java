@@ -8,6 +8,7 @@ public class _15552_빠른_A_더하기_B {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
+
 		int N = Integer.parseInt(br.readLine());
 		for(int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());

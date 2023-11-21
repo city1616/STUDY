@@ -8,6 +8,7 @@ public class _10814_나이순정렬 {
 	static class P implements Comparable<P> {
 		int age;
 		String name;
+		
 		public P(int age, String name) {
 			this.age = age;
 			this.name = name;

@@ -17,7 +17,6 @@ public class _1926_그림 {
 
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-
         image = new int[N][M];
 
         for(int i = 0; i < N; i++) {

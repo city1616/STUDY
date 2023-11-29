@@ -25,7 +25,6 @@ public class _10814_나이순정렬 {
 		StringBuilder sb = new StringBuilder();
 
 		int N = Integer.parseInt(br.readLine());
-		
 		P[] people = new P[N];
 		
 		for(int i = 0; i < N; i++) {
@@ -34,6 +33,7 @@ public class _10814_나이순정렬 {
 			String name = st.nextToken();
 			people[i] = new P(age, name);
 		}
+
 		Arrays.sort(people);
 		for(int i = 0; i < N; i++) {
 			sb.append(people[i].age).append(" ").append(people[i].name).append("\n");

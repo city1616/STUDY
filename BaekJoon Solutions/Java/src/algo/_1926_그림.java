@@ -13,12 +13,12 @@ public class _1926_그림 {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-
         image = new int[N][M];
+
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine(), " ");
             for(int j = 0; j < M; j++) {
@@ -29,7 +29,6 @@ public class _1926_그림 {
         visit = new boolean[N][M];
         int cnt = 0;
         max = 0;
-
         for(int i = 0; i < N; i++) {
             for(int j = 0; j < M; j++) {
                 if(image[i][j] == 1 && !visit[i][j]) {
@@ -47,7 +46,6 @@ public class _1926_그림 {
         ArrayDeque<int[]> q = new ArrayDeque<>();
         visit[i][j] = true;
         q.add(new int[] {i, j});
-
         int cnt = 1;
 
         while(!q.isEmpty()) {
@@ -64,7 +62,6 @@ public class _1926_그림 {
                 cnt++;
             }
         }
-
         max = (cnt > max) ? cnt : max;
     }
 }

@@ -13,6 +13,7 @@ public class _10814_나이순정렬 {
 			this.age = age;
 			this.name = name;
 		}
+
 		@Override
 		public int compareTo(P o) {
 			// if(this.age == o.age) return this.name.compareTo(o.name);
@@ -38,6 +39,7 @@ public class _10814_나이순정렬 {
 		for(int i = 0; i < N; i++) {
 			sb.append(people[i].age).append(" ").append(people[i].name).append("\n");
 		}
+		
 		System.out.print(sb);
 		br.close();
 	}

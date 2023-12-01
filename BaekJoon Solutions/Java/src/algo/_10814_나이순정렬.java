@@ -31,6 +31,7 @@ public class _10814_나이순정렬 {
 		for(int i = 0; i < N; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			int age = Integer.parseInt(st.nextToken());
+
 			String name = st.nextToken();
 			people[i] = new P(age, name);
 		}
@@ -39,7 +40,7 @@ public class _10814_나이순정렬 {
 		for(int i = 0; i < N; i++) {
 			sb.append(people[i].age).append(" ").append(people[i].name).append("\n");
 		}
-		
+
 		System.out.print(sb);
 		br.close();
 	}

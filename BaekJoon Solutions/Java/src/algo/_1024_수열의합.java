@@ -10,7 +10,6 @@ public class _1024_수열의합 {
 
         int N = Integer.parseInt(st.nextToken());
         int L = Integer.parseInt(st.nextToken());
-
         int start = N / L - L;
         int end = start + L - 1;
         int cnt = 0;
@@ -23,8 +22,7 @@ public class _1024_수열의합 {
                 start -= start;
 //                System.out.println("start : " + start + " end : " + end + " L : " + (L + cnt));
             }
-
-
+            
             int sum = 0;
             for(int i = start; i <= end; i++) {
                 sum += i;

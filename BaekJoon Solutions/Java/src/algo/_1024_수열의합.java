@@ -22,7 +22,7 @@ public class _1024_수열의합 {
                 start -= start;
 //                System.out.println("start : " + start + " end : " + end + " L : " + (L + cnt));
             }
-            
+
             int sum = 0;
             for(int i = start; i <= end; i++) {
                 sum += i;
@@ -49,6 +49,7 @@ public class _1024_수열의합 {
                 break;
             }
         }
+        
         if(flag) {
             for(int i = start; i <= end; i++) System.out.print(i + " ");
         } else {

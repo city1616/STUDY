@@ -49,7 +49,7 @@ public class _1024_수열의합 {
                 break;
             }
         }
-        
+
         if(flag) {
             for(int i = start; i <= end; i++) System.out.print(i + " ");
         } else {

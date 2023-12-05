@@ -25,18 +25,16 @@ public class _1325_효율적인해킹 {
             String[] fromTo = br.readLine().split(" ");
             int from = Integer.parseInt(fromTo[0]);
             int to = Integer.parseInt(fromTo[1]);
-
             graph.get(from).add(to);
         }
+        
         result = new int[n + 1];
-
         for (int i = 1; i <= n; i++) {
             visited = new boolean[n + 1];
             getMaxPen(i);
         }
 
         int max = 0;
-
         for (int i = 1; i <= n; i++) {
             max = Math.max(max, result[i]);
         }

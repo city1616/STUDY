@@ -10,6 +10,7 @@ public class _1325_효율적인해킹 {
     private static int[] result;
 
     public static void main(String[] args) throws IOException {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -27,7 +28,7 @@ public class _1325_효율적인해킹 {
             int to = Integer.parseInt(fromTo[1]);
             graph.get(from).add(to);
         }
-        
+
         result = new int[n + 1];
         for (int i = 1; i <= n; i++) {
             visited = new boolean[n + 1];

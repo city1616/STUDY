@@ -7,7 +7,6 @@ public class _1330_두_수_비교하기 {
 		Scanner sc = new Scanner(System.in);
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-
 		String result = null;
 
 		if(A > B) {

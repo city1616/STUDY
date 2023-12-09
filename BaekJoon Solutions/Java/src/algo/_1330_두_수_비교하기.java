@@ -16,6 +16,7 @@ public class _1330_두_수_비교하기 {
 		} else {
 			result = "==";
 		}
+		
 		System.out.println(result);
 		sc.close();
 	}

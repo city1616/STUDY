@@ -8,7 +8,7 @@ public class _1330_두_수_비교하기 {
 		int A = sc.nextInt();
 		int B = sc.nextInt();
 		String result = null;
-		
+
 		if(A > B) {
 			result = ">";
 		} else if(A < B) {
@@ -16,6 +16,7 @@ public class _1330_두_수_비교하기 {
 		} else {
 			result = "==";
 		}
+
 		System.out.println(result);
 		sc.close();
 	}

@@ -17,9 +17,11 @@ public class _2525_오븐_시계 {
 			H += M / 60;
 			M = M % 60;
 		}
+
 		if(H >= 24) {
 			H -= 24;
 		}
+		
 		System.out.println(H + " " + M);
 		sc.close();
 	}

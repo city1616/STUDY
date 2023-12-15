@@ -17,6 +17,7 @@ public class _9506_약수들의합 {
 
             int[] arr = new int[N];
             int sum = 0;
+            
             for(int i = 1; i < N; i++) {
                 if(N % i == 0) {
                     arr[i - 1] = i;

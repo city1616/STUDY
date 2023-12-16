@@ -10,14 +10,12 @@ public class _9506_약수들의합 {
 
         while(true) {
             int N = Integer.parseInt(br.readLine());
-
             if(N == -1) {
                 break;
             }
 
             int[] arr = new int[N];
             int sum = 0;
-            
             for(int i = 1; i < N; i++) {
                 if(N % i == 0) {
                     arr[i - 1] = i;

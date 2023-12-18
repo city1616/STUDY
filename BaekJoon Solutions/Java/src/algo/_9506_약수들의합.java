@@ -7,6 +7,7 @@ public class _9506_약수들의합 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+        
         while(true) {
             int N = Integer.parseInt(br.readLine());
             if(N == -1) {

@@ -10,7 +10,6 @@ public class _9506_약수들의합 {
 
         while(true) {
             int N = Integer.parseInt(br.readLine());
-            
             if(N == -1) {
                 break;
             }

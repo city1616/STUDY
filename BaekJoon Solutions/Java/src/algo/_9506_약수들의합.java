@@ -21,6 +21,7 @@ public class _9506_약수들의합 {
                     sum += i;
                 }
             }
+            
             if(sum == N) {
                 sb.append(N).append(" = 1");
                 for(int i = 1; i < N; i++) {

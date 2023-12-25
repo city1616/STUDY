@@ -12,7 +12,6 @@ public class _1911_흙길보수하기 {
         int L = Integer.parseInt(st.nextToken());
 
         int[][] arr = new int[N][2];
-
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine(), " ");
             arr[i][0] = Integer.parseInt(st.nextToken());
@@ -31,13 +30,10 @@ public class _1911_흙길보수하기 {
 
         int cnt = 0;
         int temp = 0;
-
         for(int i = 0; i < N; i++) {
-
             if (arr[i][0] > temp) {
                 temp = arr[i][0];
             }
-
             if (arr[i][1] > temp) {
                 while (arr[i][1] > temp) {
                     temp += L;
@@ -47,7 +43,6 @@ public class _1911_흙길보수하기 {
         }
 
         System.out.println(cnt);
-
         br.close();
     }
 }

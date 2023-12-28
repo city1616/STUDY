@@ -12,7 +12,7 @@ public class _9506_약수들의합 {
             if(N == -1) {
                 break;
             }
-            
+
             int[] arr = new int[N];
             int sum = 0;
             for(int i = 1; i < N; i++) {

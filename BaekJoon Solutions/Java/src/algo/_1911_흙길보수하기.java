@@ -25,7 +25,6 @@ public class _1911_흙길보수하기 {
                 return o1[0] - o2[0];
             }
         });
-        
 //        for(int i = 0; i < N; i++) System.out.println(Arrays.toString(arr[i]));
         int cnt = 0;
         int temp = 0;

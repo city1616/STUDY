@@ -15,6 +15,7 @@ public class _1676_팩토리얼0의개수 {
         String numS = num.toString();
 
         int cnt = 0;
+        
         for(int i = numS.length() - 1; i >= 0; i--) {
             if(numS.charAt(i) == '0') cnt++;
             else break;

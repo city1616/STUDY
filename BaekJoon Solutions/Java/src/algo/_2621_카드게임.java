@@ -41,7 +41,7 @@ public class _2621_카드게임 {
 		for(int i = 0; i < 4; i++) {
 			if(arr[i] + 1 != arr[i + 1]) flag = false;
 		}
-		
+
 //		System.out.println(cmax);
 		int imax = 0;
 		int idx = 0;
@@ -51,6 +51,7 @@ public class _2621_카드게임 {
 		int three_idx = 0;
 		int two_idx = 0;
 		int two_idx2 = 0;
+		
 		for(int i = 1; i < 10; i++) {
 			if(imax < iarr[i]) {
 				imax = iarr[i];

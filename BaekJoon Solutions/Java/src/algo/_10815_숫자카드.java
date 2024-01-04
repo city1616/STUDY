@@ -10,6 +10,7 @@ public class _10815_숫자카드 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+
         int N = Integer.parseInt(br.readLine());
 
         card = new int[N];
@@ -20,12 +21,14 @@ public class _10815_숫자카드 {
 
         int M = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine(), " ");
+
         for(int i = 0; i < M; i++) {
             int num = Integer.parseInt(st.nextToken());
             if(binary_search(0, N - 1, num)) sb.append(1);
             else sb.append(0);
             sb.append(" ");
         }
+
         System.out.println(sb);
         br.close();
     }

@@ -51,7 +51,7 @@ public class _2621_카드게임 {
 		int three_idx = 0;
 		int two_idx = 0;
 		int two_idx2 = 0;
-		
+
 		for(int i = 1; i < 10; i++) {
 			if(imax < iarr[i]) {
 				imax = iarr[i];

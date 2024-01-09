@@ -24,6 +24,7 @@ public class _2805_나무자르기 { // 매개변수 탐색(Parametric Search)
         int start = 0;
         int end = tree[N - 1];
         int half = 0;
+
         while(start < end) {
             half = (start + end) / 2;
             if(start == half || end == half) break;

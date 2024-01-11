@@ -20,8 +20,7 @@ public class _11725_트리의부모찾기 {
 
         g = new List[N]; // 헤더들의 집합
         for(int i = 0; i < N; i++) g[i] = new ArrayList<>();
-
-
+        
         for(int i = 0; i < N - 1; i++) {
             st = new StringTokenizer(br.readLine(), " ");
             int from = Integer.parseInt(st.nextToken()) - 1;
@@ -35,7 +34,7 @@ public class _11725_트리의부모찾기 {
 
         visit = new boolean[N];
         dfs(0);
-        
+
 //        System.out.println(Arrays.toString(parents));
         for(int i = 1; i < N; i++) sb.append(parents[i] + 1).append("\n");
         System.out.print(sb);

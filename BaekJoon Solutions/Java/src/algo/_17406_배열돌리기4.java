@@ -21,6 +21,7 @@ public class _17406_배열돌리기4 {
 		M = Integer.parseInt(st.nextToken());
 		K = Integer.parseInt(st.nextToken());
 		point = new int[K][3];
+
 		// 배열 입력
 		arr = new int[N][M];
 		copy = new int[N][M];
@@ -42,8 +43,10 @@ public class _17406_배열돌리기4 {
 		result = new int[K][3];
 		visit = new boolean[K];
 		perm(0);
+
 //		System.out.println();
 //		for(int[] a : arr) System.out.println(Arrays.toString(a));
+
 		System.out.println(min);
 	}
 	

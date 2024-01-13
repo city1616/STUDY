@@ -7,6 +7,7 @@ public class _10798_세로읽기 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
+
 		char[][] arr = new char[5][15];
 		for(int i = 0; i < 5; i++) {
 			String S = br.readLine();
@@ -21,6 +22,7 @@ public class _10798_세로읽기 {
 				sb.append(arr[j][i]);
 			}
 		}
+
 		System.out.println(sb);
 		br.close();
 	}

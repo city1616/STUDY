@@ -19,6 +19,7 @@ public class _9498_시험_성적_if {
 		} else {
 			grade = "F";
 		}
+
 		System.out.println(grade);
 		sc.close();
 	}

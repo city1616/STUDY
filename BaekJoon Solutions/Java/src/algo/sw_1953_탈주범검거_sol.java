@@ -75,9 +75,11 @@ public class sw_1953_탈주범검거_sol {
 					dir = info.charAt(d) - '0';
 					int ni = i + di[dir];
 					int nj = j + dj[dir];
+
 					if(ni < 0 || ni >= N || nj < 0 || nj >= M) continue;
 					if(map[ni][nj] == 0) continue;
 					if(visit[ni][nj]) continue;
+
 					if(type[map[ni][nj]].contains(Integer.toString(3 - dir))) {
 						visit[ni][nj] = true;
 						q.offer(new int[] {ni, nj});

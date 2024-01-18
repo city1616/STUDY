@@ -61,9 +61,11 @@ public class _1012_유기농배추 {
 		
 		while(!q.isEmpty()) {
 			Node now = q.poll();
+
 			for(int d = 0; d < 4; d++) {
 				int ni = now.i + di[d];
 				int nj = now.j + dj[d];
+
 				if(ni < 0 || ni >= N || nj < 0 || nj >= M) continue;
 				if(visit[ni][nj]) continue;
 				if(map[ni][nj] == 1) {

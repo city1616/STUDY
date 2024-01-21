@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 public class _2576_홀수 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int sum = 0;
         int min = 101;
         boolean flag = false;
@@ -17,6 +18,7 @@ public class _2576_홀수 {
             sum += number;
             min = Math.min(min, number);
         }
+
         if(flag) {
             System.out.println(sum);
             System.out.println(min);

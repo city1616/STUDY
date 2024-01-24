@@ -9,7 +9,6 @@ public class _2566_최댓값 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int[][] map = new int[9][9];
 		StringTokenizer st;
-		
 		int max = 0;
 		int x = 1;
 		int y = 1;

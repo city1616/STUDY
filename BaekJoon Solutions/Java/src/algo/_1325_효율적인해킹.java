@@ -13,8 +13,10 @@ public class _1325_효율적인해킹 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String[] nm = br.readLine().split(" ");
+
         int n = Integer.parseInt(nm[0]);
         int m = Integer.parseInt(nm[1]);
+        
         for (int i = 0; i <= n; i++) {
             graph.add(new ArrayList<>());
         }

@@ -16,7 +16,7 @@ public class _1325_효율적인해킹 {
 
         int n = Integer.parseInt(nm[0]);
         int m = Integer.parseInt(nm[1]);
-        
+
         for (int i = 0; i <= n; i++) {
             graph.add(new ArrayList<>());
         }

@@ -12,6 +12,7 @@ public class _2775_부녀회장이될테야 {
 		for(int i = 1; i <= 15; i++) {
 			arr[0][i - 1] = i;
 		}
+
 		for(int i = 1; i < 15; i++) {
 			arr[i][0] = 1;
 			for(int j = 1; j < 15; j++) {

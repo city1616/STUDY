@@ -13,12 +13,15 @@ public class _1110_더하기_사이클 {
 		while(true) {
 			if(N.length() == 0) N = "0" + N;
 			int sum = 0;
+
 			for(int i = 0; i < N.length(); i++) {
 				sum += N.charAt(i) - '0';
 			}
+
 			String sum_tmp = Integer.toString(sum);
 			String front = Character.toString(N.charAt(N.length() - 1));
 			String back = Character.toString(sum_tmp.charAt(sum_tmp.length() - 1));
+
 			// N = N.charAt(N.length() - 1) + sum_tmp.charAt(sum_tmp.length() - 1);
 			N = front + back;
 			if(Integer.parseInt(N) == intN) {

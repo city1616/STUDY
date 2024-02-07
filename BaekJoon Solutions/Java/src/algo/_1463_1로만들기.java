@@ -6,6 +6,7 @@ import java.util.*;
 public class _1463_1로만들기 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 		int N = Integer.parseInt(br.readLine());
 		int[] dp = new int[N + 1];
 		dp[0] = 0;

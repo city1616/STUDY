@@ -9,7 +9,9 @@ public class _1546_평균 {
 		int N = Integer.parseInt(br.readLine());
 		int[] score = new int[N];
 		StringTokenizer st = new StringTokenizer(br.readLine());
+
 		for(int i = 0; i < N; i++) score[i] = Integer.parseInt(st.nextToken());
+
 		int max = Integer.MIN_VALUE;
 		for(int num: score) {
 			if(num > max) max = num;

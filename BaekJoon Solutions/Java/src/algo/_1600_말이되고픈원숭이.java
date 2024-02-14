@@ -44,6 +44,7 @@ public class _1600_말이되고픈원숭이 {
 	}
 	
 	static void bfs(int i, int j) {
+
 		ArrayDeque<Node> q = new ArrayDeque<>();
 		q.offer(new Node(i, j, 0, 0));
 
@@ -56,6 +57,7 @@ public class _1600_말이되고픈원숭이 {
 				System.out.println(cur.cnt);
 				return;
 			}
+
 			if(i < 0 || i >= H || j < 0 || j >= W || map[i][j] == 1) continue;
 			if(visit[i][j][k]) continue;
 			for(int d = 0; d < 4; d++) {

@@ -7,8 +7,10 @@ public class _1911_흙길보수하기 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
         int N = Integer.parseInt(st.nextToken());
         int L = Integer.parseInt(st.nextToken());
+
         int[][] arr = new int[N][2];
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine(), " ");

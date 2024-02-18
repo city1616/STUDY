@@ -14,6 +14,7 @@ public class _1157_단어_공부 {
 			}
 			result[al[i] - 65]++;
 		}
+
 		int max = Integer.MIN_VALUE;
 		int maxIdx = -1;
 		

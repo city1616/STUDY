@@ -14,6 +14,7 @@ public class _1158_요세푸스_문제 {
 		
 		ArrayDeque<Integer> q = new ArrayDeque<>();
 		int[] ans = new int[N];
+
 		for(int i = 1; i <= N; i++) {
 			q.offer(i);
 		}

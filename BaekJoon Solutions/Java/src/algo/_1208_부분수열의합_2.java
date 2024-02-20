@@ -18,6 +18,7 @@ public class _1208_부분수열의합_2 {
 
         arr = new int[N];
         st = new StringTokenizer(br.readLine(), " ");
+
         for(int i = 0; i < N; i++) arr[i] = Integer.parseInt(st.nextToken());
 
         cnt = 0;
@@ -42,7 +43,6 @@ public class _1208_부분수열의합_2 {
             if(sum == S && flag) cnt += 1;
             return;
         }
-
         visit[depth] = true;
         subs(depth + 1);
         visit[depth] = false;

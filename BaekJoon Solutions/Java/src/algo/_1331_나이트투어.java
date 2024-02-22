@@ -8,13 +8,16 @@ public class _1331_나이트투어 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		boolean[][] visit = new boolean[6][6];
 		boolean flag = true;
+
 		// System.out.println('1' - 48);
+
 		String S = br.readLine();
 		int start_x = S.charAt(0) - 65;
 		int start_y = S.charAt(1) - 49;
 		int star_x = start_x;
 		int star_y = start_y;
 		visit[start_x][start_y] = true;
+
 		int end_x = 0;
 		int end_y = 0;
 		for(int i = 0; i < 35; i++) {

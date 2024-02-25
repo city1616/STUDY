@@ -11,6 +11,7 @@ public class _2292_벌집 {
 		int cnt = 1;
 		int ans = 1;
 		boolean chk = false;
+
 		if(N != 1) {
 			for(int i = 0; i < Integer.MAX_VALUE; i++) {
 				if(chk) break;

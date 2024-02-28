@@ -17,7 +17,6 @@ public class _1157_단어_공부 {
 
 		int max = Integer.MIN_VALUE;
 		int maxIdx = -1;
-		
 		for(int i = 0; i < result.length; i++) {
 			if(result[i] > max) {
 				max = result[i];

@@ -13,9 +13,7 @@ public class _1316_그룹단어체커 {
 			char[] c = br.readLine().toCharArray();
 			List<Character> list = new ArrayList<>();
 			boolean chk = false;
-			
 			// System.out.println(Arrays.toString(c));
-			
 			list.add(c[0]);
 			for(int i = 0; i < c.length - 1; i++) {
 				 if(c[i] != c[i + 1]) {

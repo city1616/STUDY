@@ -37,9 +37,7 @@ public class _1920_수찾기 {
 
         while(min < max) {
             int half = (min + max) / 2;
-
             if(arr[half] == num) flag = true;
-
             if(num <= arr[half]) max = half;
             else min = half + 1;
         }

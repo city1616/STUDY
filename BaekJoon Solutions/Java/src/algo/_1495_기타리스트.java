@@ -11,6 +11,7 @@ public class _1495_기타리스트 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
         N = Integer.parseInt(st.nextToken());
         S = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
@@ -23,7 +24,6 @@ public class _1495_기타리스트 {
 
         // 행 index : 연주해야될 인덱스, 열 index : 현재 볼륨
         boolean[][] dp = new boolean[N][M + 1];
-
         if(S - arr[0] >= 0) dp[0][S - arr[0]] = true;
         if(S + arr[0] <= M) dp[0][S + arr[0]] = true;
 

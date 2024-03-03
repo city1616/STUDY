@@ -14,7 +14,6 @@ public class _1654_랜선자르기 {
         for(int i = 0; i < K; i++) wire[i] = Integer.parseInt(br.readLine());
 
         Arrays.sort(wire);
-
         boolean flag = true;
         for(int i = 0; i < K - 1; i++) {
             if(wire[i] != wire[i + 1]) {

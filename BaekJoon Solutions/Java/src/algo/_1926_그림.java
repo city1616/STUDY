@@ -14,11 +14,9 @@ public class _1926_그림 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         image = new int[N][M];
-
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine(), " ");
             for(int j = 0; j < M; j++) {

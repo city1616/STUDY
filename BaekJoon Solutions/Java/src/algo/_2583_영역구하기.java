@@ -15,8 +15,8 @@ public class _2583_영역구하기 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-        StringTokenizer st;
 
+        StringTokenizer st;
         st = new StringTokenizer(br.readLine(), " ");
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
@@ -29,7 +29,6 @@ public class _2583_영역구하기 {
             int b = Integer.parseInt(st.nextToken());
             int c = Integer.parseInt(st.nextToken());
             int d = Integer.parseInt(st.nextToken());
-
             for(int n = b; n < d; n++) {
                 for(int m = a; m < c; m++) {
                     map[n][m] = 1;

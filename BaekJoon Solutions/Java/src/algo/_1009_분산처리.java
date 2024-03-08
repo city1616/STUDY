@@ -11,8 +11,10 @@ public class _1009_분산처리 {
         int T = Integer.parseInt(br.readLine());
         for(int i = 0; i < T; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
+
             int temp = 1;
             for(int j = 0; j < b; j++) {
                 temp = temp * a % 10;

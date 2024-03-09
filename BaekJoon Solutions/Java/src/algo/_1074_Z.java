@@ -8,6 +8,7 @@ public class _1074_Z {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
 		int N = Integer.parseInt(st.nextToken());
 		int r = Integer.parseInt(st.nextToken());
 		int c = Integer.parseInt(st.nextToken());

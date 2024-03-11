@@ -7,6 +7,7 @@ public class _1075_나누기 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		int F = Integer.parseInt(br.readLine());
+
 		N -= (N % 100);
 		while(true) {
 			if(N % F == 0) {

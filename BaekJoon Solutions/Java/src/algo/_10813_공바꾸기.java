@@ -18,6 +18,7 @@ public class _10813_공바꾸기 {
 			int to = Integer.parseInt(st.nextToken());
 			int from = Integer.parseInt(st.nextToken());
 			int tmp;
+
 			tmp = arr[to];
 			arr[to] = arr[from];
 			arr[from] = tmp;

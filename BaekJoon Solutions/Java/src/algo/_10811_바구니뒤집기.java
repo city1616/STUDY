@@ -8,6 +8,7 @@ public class _10811_바구니뒤집기 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		
@@ -22,6 +23,7 @@ public class _10811_바구니뒤집기 {
 				swap(arr, from - j, to + j);
 			}
 		}
+
 		StringBuilder sb = new StringBuilder();
 		for(int i = 1; i < N + 1; i++) sb.append(arr[i]).append(" ");
 		System.out.println(sb);

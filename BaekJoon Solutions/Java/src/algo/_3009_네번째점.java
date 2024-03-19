@@ -11,9 +11,11 @@ public class _3009_네번째점 {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
+
         st = new StringTokenizer(br.readLine(), " ");
         int c = Integer.parseInt(st.nextToken());
         int d = Integer.parseInt(st.nextToken());
+
         st = new StringTokenizer(br.readLine(), " ");
         int e = Integer.parseInt(st.nextToken());
         int f = Integer.parseInt(st.nextToken());

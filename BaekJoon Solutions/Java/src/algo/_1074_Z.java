@@ -14,11 +14,9 @@ public class _1074_Z {
 		int c = Integer.parseInt(st.nextToken());
 		
 		int size = (int)Math.pow(2, N);
-		
 		cal(size, r, c);
 		
 		System.out.println(cnt);
-		
 		br.close();
 	}
 	

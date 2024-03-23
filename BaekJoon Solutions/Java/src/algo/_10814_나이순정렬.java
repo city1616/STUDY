@@ -37,6 +37,7 @@ public class _10814_나이순정렬 {
 		}
 
 		Arrays.sort(people);
+
 		for(int i = 0; i < N; i++) {
 			sb.append(people[i].age).append(" ").append(people[i].name).append("\n");
 		}

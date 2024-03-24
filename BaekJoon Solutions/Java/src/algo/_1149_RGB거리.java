@@ -12,6 +12,7 @@ public class _1149_RGB거리 {
 		N = Integer.parseInt(br.readLine());
 		
 		int[][] cost = new int[N][3];
+
 		for(int i = 0; i < N; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			cost[i][0] = Integer.parseInt(st.nextToken()); // R

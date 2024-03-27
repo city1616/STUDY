@@ -22,6 +22,7 @@ public class _1244_스위치켜고끄기 {
 		int student = Integer.parseInt(br.readLine());
 		for(int i = 0; i < student; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
+
 			int gender = Integer.parseInt(st.nextToken());
 			int sw_num = Integer.parseInt(st.nextToken());
 			
